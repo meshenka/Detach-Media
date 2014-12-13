@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: Detach_Media
- * Description: Because you can attach media but sometimes you just want to unattach them not delete all the thing !
+ * Description: Because you can attach media but sometimes you just want to re-attach them not delete all the thing !
  * Version : 1.0
  * Author: Julien Maury
  * Author URI: http://tweetpressfr.github.io
