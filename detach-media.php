@@ -1,7 +1,6 @@
 <?php
 /*
  * Plugin Name: Detach_Media
- * Plugin URI: https://github.com/TweetPressFr/Detach-Media
  * Description: Because you can attach media but sometimes you just want to unattach them not delete all the thing !
  * Version : 1.0
  * Author: Julien Maury
@@ -52,17 +51,17 @@ if( ! class_exists('Detach_Media') )
         /*
          * Use action hook to add our button
          */
-        public static function hooks()
+        public function hooks()
         {
 
-            add_action( 'media_row_actions',  array(__CLASS__, 'detach_media'), 10, 3 );
+            add_action( 'media_row_actions',  array(__CLASS__, 'detach_media_link'), 10, 3 );
 
         }
 
         /*
          * Allow user to change the post to which the media is attached
          */
-        public static function detach_media( $actions, $post, $detached )
+        public static function detach_media_link( $actions, $post, $detached )
         {
             if ( $post->post_parent != 0 ) {
 
