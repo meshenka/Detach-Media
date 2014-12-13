@@ -67,7 +67,7 @@ if( ! class_exists('Detach_Media') )
 
                 if ( current_user_can('edit_post', $post->ID) ) {
 
-                    $actions['attach'] = "<a href='#the-list' onclick='findPosts.open( 'media[]','" . $post->ID . "' );return false;' class='hide-if-no-js'>" . __('Detach', 'detach-media') . "</a>";
+                    $actions['attach'] = "<a href='#the-list' onclick='findPosts.open( 'media[]','" . $post->ID . "' );return false;' class='hide-if-no-js'>" . __('Re-attach', 'detach-media') . "</a>";
 
                  }
             }
