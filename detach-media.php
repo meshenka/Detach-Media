@@ -32,12 +32,12 @@ if( ! class_exists('Detach_Media') )
     class Detach_Media
     {
         /*
-         *
+         * @var $instance
          */
         private static $instance;
 
         /*
-         *
+         * Allows nice things !
          */
         public static function GetInstance()
         {
