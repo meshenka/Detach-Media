@@ -53,8 +53,8 @@ if( ! class_exists('Detach_Media') )
          */
         public function hooks()
         {
-
-            add_action( 'media_row_actions',  array(__CLASS__, 'detach_media_link'), 10, 3 );
+            // media_row_actions is a filter not an action, props to @meshenka
+            add_filter( 'media_row_actions',  array(__CLASS__, 'detach_media_link'), 10, 3 );
 
         }
 
